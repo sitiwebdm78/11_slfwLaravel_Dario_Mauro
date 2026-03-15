@@ -1,5 +1,9 @@
 <div class="card mb-5" style="width: 18rem;">
-    <img class="imgcardvisit" src="https://picsum.photos/200/300" class="card-img-top" alt="{{$visitname}}">
+    @if(!$img)
+        <img class="imgcardvisit" src="https://picsum.photos/200/300" class="card-img-top" alt="{{$visitname}}">
+    @else    
+        <img class="imgcardvisit" src="{{Storage::url($img)}}" class="card-img-top" alt="{{$visitname}}">
+     @endif
     <div class="card-body">
         <h5 class="card-title">{{$visitname}}</h5>
         <h6 class="mb-0">Indirizzo:</h6>

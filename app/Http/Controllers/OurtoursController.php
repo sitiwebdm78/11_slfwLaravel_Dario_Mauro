@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use App\Models\Monument;
 use Illuminate\Http\Request;
+use App\Http\Requests\MonumentRequest;
+/* use Illuminate\Foundation\Http\FormRequest; */
 
 
 class OurtoursController extends Controller
@@ -76,13 +78,17 @@ class OurtoursController extends Controller
         return view('visits.vwcreate');
     }
     
-    public function fnVisitStore(Request $request){
+    public function fnVisitStore(MonumentRequest $request){
 
         $monument = Monument::create([
             'visitname' => $request->visitname,
             'authorname' => $request->authorname,
             'year' => $request->year,
-            'story' => $request->story
+            'story' => $request->story,
+            'img' => $request->file('img')->store('img', 'public'),
+
+            /* dd($request->all()) */
+
         ]);
 
          return redirect()->route('rthpnapolimania')->with('successMessage', 'Hai inserito correttamente la richiesta per aggiungere il tour di un un nuovo monumento.');

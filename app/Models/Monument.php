@@ -9,6 +9,6 @@ class Monument extends Model
 {
      use HasFactory;
     protected $fillable = [
-        'visitname', 'authorname', 'year', 'story'
+        'visitname', 'authorname', 'year', 'story', 'img'
     ];
 }

@@ -1,23 +1,9 @@
-<x-cmplytnm> 
-@if (session('message'))
-    <div class="alert alert-success">
-        {{ session('message') }}
-    </div>
-@endif
-    <!-- /resources/views/post/create.blade.php -->
-    
-@if ($errors->any())
-    <div class="alert alert-danger mt-5">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
+<x-cmplytnm>
+    <x-displaymessage />
+    <x-displayerror />  
     <div class="container">
         <div class="row mb-5">
-            <div class="col-12">
+            <div class="col-12 mt-4">
                 <h1 class="text-center mt-5 pt-3">Richiedi la tua visita guidata</h1>
                 <form method="POST" action="{{ route('visit.rtsubmit') }}" enctype="multipart/form-data" class="formcustom2 centerform shadow-lg">
                     @csrf

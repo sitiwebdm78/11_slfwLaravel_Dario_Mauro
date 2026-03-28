@@ -1,6 +1,6 @@
 <x-cmplytnm> 
      <header>
-            <div class="container-fluid">
+            <div class="container-fluid custombody1 vh-100">
                 <div class="d-flex">
                     <div class="col-6">
                         <h2 class="customtitleh2">CHI SIAMO</h2>

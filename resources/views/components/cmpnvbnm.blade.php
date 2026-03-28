@@ -13,6 +13,12 @@
                  <ul class="navbar-nav me-auto">
                     <a class="nav-link @if(Route::currentRouteName() === 'rthpnapolimania') active_custom @endif" aria-current="page" href="{{ route('rthpnapolimania') }}">Napolimania</a>
                     <li><a class="nav-link @if(Route::currentRouteName() === 'visit.rtcreate') active_custom @endif" href="{{ route('visit.rtcreate') }}">Richiedi Nuovo Tour</a></li>
+                    <li>
+                        <a class="nav-link @if(Route::currentRouteName() === 'mytours.create') active_custom @endif" href="{{ route('mytours.create') }}">Salva Tours Preferiti</a>
+                    </li>
+                    <li>
+                        <a class="nav-link @if(Route::currentRouteName() === 'mytours.index') active_custom @endif" href="{{ route('mytours.index') }}">I Tuoi Tours Preferiti</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav d-flexo">
                     <li class="nav-item me-4">

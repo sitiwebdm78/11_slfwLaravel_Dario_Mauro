@@ -1,133 +1,150 @@
     /* UNIVERSAL STYLE OF PAGES  */
-
+    
     :root{
         --green: #405159;
+        --azhur: #90d1ef;
+        --wht: rgb(255, 255, 255);
+    }
+    
+    .txtwht{
+        color: var(--wht);
+    }
+    
+    .custombody1{
+        background-color: var(--azhur)
+    }
+    
+    .custombody2{
+        background-color: var(--green)
+    }
+    
+    
+    .navbar{
+        background-color: var(--green)
+        
+    }
+    
+    .bg_dropdown{
+        background-color: var(--green);
+    }
+    
+    .nav-link { color: var(--azhur); }
+    .nav-link:hover { color:antiquewhite; }
+    
+    .active_custom{
+        color: rgb(255, 153, 0)
+        
+    }                   
+    
+    .bg_img{
+        width: 1000px;
+        background-image: url('../../public/mediasitenapolimania/Napoli_hompage1.jpg'); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 75vh;
+        align-items: center;
+    }
+    
+    .customtitleh1{
+        font-size: 60px; 
+        color: aqua;
+        text-shadow: 10px 4px 2px rgba(10, 10, 10, 1);
+        text-align: center;
+    }
+    
+    .customtitleh2{
+        margin-top: 100px;
+        color: white;
+        text-shadow: 5px 4px 2px rgba(5, 5, 5, 1);
+        text-align: center;
     }
 
-        body{
-            background-color: #90d1ef;
-        }
-
-       
-        .navbar{
-            background-color: #405159;
-            
-        }
-
-        .bg_dropdown{
-            background-color: var(--green);
-        }
-
-        .nav-link { color:#90d1ef; }
-        .nav-link:hover { color:antiquewhite; }
-
-        .active_custom{
-        color: rgb(255, 153, 0)
-
-        }                   
-
-        .bg_img{
-            width: 1000px;
-            background-image: url('../../public/mediasitenapolimania/Napoli_hompage1.jpg'); 
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 75vh;
-            align-items: center;
-        }
+    .txt-fs{
+        font-size: large;
+    }
     
-        .customtitleh1{
-            font-size: 60px; 
-            color: aqua;
-            text-shadow: 10px 4px 2px rgba(10, 10, 10, 1);
-            text-align: center;
-        }
+    #imgpiazzaplebiscito{
+        margin-top: 100px;
+    }
+    
+    .titlevisit{
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .dettcontainer{
+        margin-top: 50px;
         
-        .customtitleh2{
-            margin-top: 100px;
-            color: white;
-            text-shadow: 5px 4px 2px rgba(5, 5, 5, 1);
-            text-align: center;
-        }
-
-        #imgpiazzaplebiscito{
-            margin-top: 100px;
-        }
-
-        .titlevisit{
-            margin-top: 20px;
-            margin-bottom: 40px;
-            color: aliceblue;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .dettcontainer{
-            margin-top: 100px;
+    }
     
-        }
-
-        .imgcardvisit{
-            width: 287px;
-            height: 165.52px;
+    .imgcardvisit{
+        width: 287px;
+        height: 165.52px;
+        
+    }
     
-        }
-
-        .card-body{
-            background-color: black;
-            color: aliceblue;
-            
-        }
-
-        .formcustom{
-            margin-top: 20px;
-            width: 50%;
-            height: 85%;
-            background: rgba(225, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border-radius: 20px;
-            border: 2px solid rgba(225, 255, 255, 0.3);
-        }
-
-        .centerform{
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .inputform{
-            width: 90%;
-            margin-left: 30px;
-            background-color: rgba(255, 153, 0, 0.758);
-        }
-
-        .formcustom2{
-            margin-top: 20px;
-            width: 50%;
-            height: 85%;
-        }
-
-        .inputform2{
-            width: 90%;
-            margin-left: 25px;
-            background-color: #fbfaf8e4;
-        }
-
-        .textareastyle{
-            height: 130px;
-        }
-
-        .buttonform{
-            text-align: center;
-        }
-
-/* ---------- START MEDIAQUERY --------- */
-
-   @media (max-width: 600px) { /* regole per smartphone */
+    .card-body{
+        background-color: black;
+        color: aliceblue;
+        
+    }
     
-    .wrapcard{
+    .formcustom{
+        margin-top: 20px;
+        width: 30%;
+        height: 85%;
+        background: rgba(225, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 2px solid rgba(225, 255, 255, 0.3);
+    }
+    
+    .centerform{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .inputform{
+        width: 90%;
+        margin-left: 30px;
+        background-color: rgba(255, 153, 0, 0.758);
+    }
+    
+    .formcustom2{
+        margin-top: 20px;
+        width: 30%;
+        background-color:rgb(0, 125, 125)
+        
+    }
+    
+    .inputform2{
+        width: 90%;
+        margin-left: 30px;
+        background-color: var(--green);
+        color: var(--wht);
+    }
+    
+    .textareastyle{
+        height: 130px;
+    }
+    
+    .buttonform{
+        text-align: center;
+    }
+    
+    /* ---------- START MEDIAQUERY --------- */
+    
+    @media (max-width: 600px) { /* regole per smartphone */
+        
+        .wrapcard{
             display: flex;
             justify-content: center; 
-
+            
         }
-}
-
+    }
+    
+    

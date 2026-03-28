@@ -1,5 +1,5 @@
  <x-cmplytnm>
-    <header>
+    <header class="">
         <div class="container dettcontainer">
             <div class="row">
                 <h2 class="display-4 text-center mb-4 titlevisit">{{$visit['visitname']}} </h2>

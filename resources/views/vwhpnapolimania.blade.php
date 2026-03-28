@@ -1,6 +1,6 @@
     <x-cmplytnm>
         <header>
-            <div class="container-fluid d-flex justify-content-center align-items-center bg_blk vh-100">
+            <div class="container-fluid d-flex justify-content-center align-items-center custombody1 vh-100">
                 <div class="row bg_img">
                     <div class="col-12">
                         <h1 class="customtitleh1 display-1 fw-bold"> 

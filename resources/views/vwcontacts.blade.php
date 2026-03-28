@@ -1,5 +1,5 @@
-<x-cmplytnm>
-    <div class="container">
+<x-cmplytnm class="">
+    <div class="container-fluid custombody1 vh-100">
         <div class="row mb-5">
             <div class="col-12">
                 <h1 class="text-center mt-5 pt-3">Contattaci</h1>

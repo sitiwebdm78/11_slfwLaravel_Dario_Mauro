@@ -1,7 +1,7 @@
 <x-cmplytnm>
     <x-displaymessage />
     <x-displayerror />  
-    <div class="container-fluid custombody2 vh-100">
+    <div class="container-fluid custombody2">
         <div class="row mb-5">
             <div class="col-12 mt-4">
                 <h1 class="text-center mt-5 pt-3 txtwht">Richiedi la tua visita guidata</h1>

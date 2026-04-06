@@ -22,6 +22,7 @@
                                     {{session('successMessage')}}
                                 </div>
                             @endif
+                            <x-displaymessage />
                         </div>
                     </div>
                 </div>  

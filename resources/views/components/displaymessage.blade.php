@@ -1,5 +1,5 @@
 @if (session('message'))
-    <div class="alert alert-success bg_dropdown txtwht display-6 pt-5">
+    <div class="alert alert-success bg_dropdown txtwht display-6 pt-5 text-center">
         {{ session('message') }}
     </div>
 @endif

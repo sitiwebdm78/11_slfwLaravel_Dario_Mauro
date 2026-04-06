@@ -15,11 +15,13 @@
     }
     
     .custombody2{
+        height:1000px;
         background-color: var(--green)
     }
     
     
     .navbar{
+        height: 70px;
         background-color: var(--green)
         
     }
@@ -27,8 +29,14 @@
     .bg_dropdown{
         background-color: var(--green);
     }
+
+
     
-    .nav-link { color: var(--azhur); }
+    .nav-link { 
+        color: var(--azhur);
+        margin: 0px;
+        padding: 0px;
+    }
     .nav-link:hover { color:antiquewhite; }
     
     .active_custom{

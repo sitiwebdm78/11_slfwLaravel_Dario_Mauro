@@ -6,24 +6,23 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::create('monuments', function (Blueprint $table) {
             $table->id();
             $table->string('visitname');
             $table->string('authorname');
-            $table->string('year');
+            $table->integer('year');
             $table->longText('story');
+            $table->string('img')->nullable();
+            $table->boolean('is_default_image')->default(false);
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->string('address')->nullable();
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('monuments');

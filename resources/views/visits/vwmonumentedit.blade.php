@@ -24,11 +24,15 @@
                         <label for="year" class="form-label ms-4 txtwht">Anno</label>
                         <input type="text" name='year' class="form-control inputform2" id="year" value="{{ old('year', $monument->year) }}">
                     </div>
+                    <div class="mb-3 display-block">
+                        <span class="form-label text-light ms-4 mt-1 me-3" >Immagine Attuale</span>
+                        <img src="{{Storage::url($monument->img)}}" alt="{{$monument->vistname}}" with="200" height="300">
+                    </div>
                     
                     <div class="mb-3">
-                        <label for="img" class="form-label ms-4 txtwht">Nuova Immagine</label>
+                        <label for="img" class="form-label ms-4 txtwht">Modifica Immagine</label>
                         <input type="file" name='img' class="form-control inputform2" id="img">
-                        <small class="txtwht">Immagine attuale: {{ $monument->img }}</small>
+                        <small class="ms-5 txtwht">Immagine attuale: {{ $monument->img }}</small>
                     </div>
                     
                     <div class="mb-3">

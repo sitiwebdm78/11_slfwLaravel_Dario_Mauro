@@ -19,6 +19,17 @@
                         <label for="year" class="form-label ms-4 txtwht">Anno</label>
                         <input type="text" name='year' class="form-control inputform2" id="year" aria-describedby="yearHelp" value="{{old('year')}}">
                     </div>
+                     <div class="mb-3">
+                            @foreach($categories as $category) 
+                            <div class="form-check">
+                                <input class="form-check-input ms-1 mt-1" name="categories[]" type="checkbox" id="{{'categoryCheck' . $category->id}}" value="{{$category->id}}">
+                                <label class="form-check-label txtwht ms-2" for="{{'categoryCheck' . $category->id}}">
+                                    {{$category->name}}
+                                </label>
+                            </div>
+                            @endforeach
+                        </div>
+                        <p class="txtwht ms-4" >Non vedi la Categoria? <a href="{{route('category.create')}}" class="alink" >Assegnala Tu!</a></p>
                         <div class="mb-3">
                         <label for="img" class="form-label ms-4 txtwht">Inserisci un'Immagine del Monumento</label>
                         <input type="file" name='img' class="form-control inputform2" id="img" aria-describedby="imgHelp">

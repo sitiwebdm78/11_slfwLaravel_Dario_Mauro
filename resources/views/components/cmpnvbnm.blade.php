@@ -8,8 +8,14 @@
             <span class="visually-hidden">Toggle Dropdown</span>
         </button>
         <ul class="dropdown-menu bg_dropdown fs-5">
-            <li class="ms-2">
+            <li class="ms-2 liwidth">
                 <a class="nav-link @if(Route::currentRouteName() === 'visit.rtourtours') active_custom @endif" href="{{ route('visit.rtourtours') }}" >Tutti i Tours</a>
+            </li>
+             <li class="ms-2">
+                <a class="nav-link @if(Route::currentRouteName() === 'category.create') active_custom @endif" href="{{ route('category.create') }}" >Aggiungi Categoria al Tour</a>
+            </li>
+             <li class="ms-2">
+                <a class="nav-link @if(Route::currentRouteName() === 'category.index') active_custom @endif" href="{{ route('category.index') }}" >Filtra Per Categoria</a>
             </li>
         </ul>
     </div>

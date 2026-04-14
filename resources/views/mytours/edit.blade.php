@@ -20,6 +20,10 @@
                         <label for="experience" class="form-label ms-4 txtwht">Modifica la Tua experience</label>
                         <textarea name="experience" id="experience" cols="30" rows="10" class="form-control inputform2 textareastyle">{{ $mytour->experience }}</textarea>
                     </div>
+                    <div class="mb-3 display-block">
+                        <span class="form-label text-light ms-4 mt-1 me-3" >Immagine Attuale</span>
+                        <img src="{{Storage::url($mytour->img)}}" alt="{{$mytour->title}}" with="200" height="300">
+                    </div>
                     <div class="mb-3">
                         <label for="img" class="form-label ms-4 txtwht">Modifica Immagine di Ricordo</label>
                         <input type="file" name="img" class="form-control inputform2" id="img" aria-describedby="imgHelp">

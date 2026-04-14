@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\OurtoursController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PublicController;
@@ -27,3 +28,9 @@ Route::post('visit/submit', [OurtoursController::class, 'fnVisitStore'])->name('
 Route::get('/ourtours/visitdetail/{monument}', [OurtoursController::class, 'fnpgVisitdetail'])->name('visit.rtvisitdetail');
 Route::get('monument/edit/{monument}', [OurtoursController::class, 'edit'])->name('monument.edit')->middleware('auth');
 Route::put('monument/update/{monument}', [OurtoursController::class, 'update'])->name('monument.update')->middleware('auth');
+
+//Category
+Route::get('category/create', [CategoryController::class, 'create'])->name('category.create');
+Route::post('category/create/submit', [CategoryController::class, 'store'])->name('category.submit')->middleware('auth');
+Route::get('category/index', [CategoryController::class, 'index'])->name('category.index');
+Route::get('category/show/{category}', [CategoryController::class, 'show'])->name('category.show');

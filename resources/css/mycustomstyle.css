@@ -4,6 +4,7 @@
         --green: #405159;
         --azhur: #90d1ef;
         --wht: rgb(255, 255, 255);
+        --org: rgb(255, 153, 0);
     }
     
     .txtwht{
@@ -25,13 +26,19 @@
         background-color: var(--green)
         
     }
+
+    .bgazh{
+        background-color: var(--azhur);
+    }
     
     .bg_dropdown{
         background-color: var(--green);
     }
 
+    .liwidth{
+        width: 300px;
+    }
 
-    
     .nav-link { 
         color: var(--azhur);
         margin: 0px;
@@ -52,6 +59,18 @@
         background-size: cover;
         height: 75vh;
         align-items: center;
+    }
+
+    .boxcustom{
+        width: 200px;
+        height: 200px;
+        background-color: var(--azhur);
+        border: 2px solid var(--wht);
+        border-radius: 20px;
+    }
+
+    .alink{
+        color: var(--org);
     }
     
     .customtitleh1{
